@@ -1,9 +1,10 @@
 var config = {
-  apiKey: "AIzaSyAkczjbo4Rw9e-suQtb-4I66ly75m57ld8",
-  authDomain: "fire-chat-a7472.firebaseapp.com",
-  databaseURL: "https://fire-chat-a7472.firebaseio.com",
-  storageBucket: "fire-chat-a7472.appspot.com",
-  messagingSenderId: "543361364856"
+      apiKey: "AIzaSyB9cKqFyBLAZv3zpvB33NYIIFiFTYRaQZk",
+      authDomain: "firechat-752fe.firebaseapp.com",
+      databaseURL: "https://firechat-752fe.firebaseio.com",
+      projectId: "firechat-752fe",
+      storageBucket: "firechat-752fe.appspot.com",
+      messagingSenderId: "717973451599"
 };
 firebase.initializeApp(config);
 
