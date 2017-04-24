@@ -10,15 +10,47 @@
 <body>
 
   <div id="login-screen">
-    <button id="login-btn">Login</button>
-  </div>
-  <div id="chat-screen">
-    <div id="messages"></div>
+    <div class="chat">
+      <h1>Chat</h1>
+      <img class="logo" src="img/logo.png" alt="">
+    </div>
+
+    <div class="btn-container">
+        <button class="btn-facebook" id="login-btn">
+          <img class="face"src="img/facebook.png" alt="">
+            </button>
+            <p>Login Facebook</p>
+
+                <button class="btn-facebook" id="login-btn">
+                  <img class="twitter"src="img/twitter.png" alt="">
+                </button>
+                <p>Login twitter</p>
+
+                  <button class="btn-facebook" id="login-btn">
+                      <img class="github" src="img/GitHub.png" alt="">
+                  </button>
+                  <p>Login GitHub</p>
+
+    </div>
+
+    <div class="texto">
+      <a href="#"><p>Create Account</p></a>
+      <a href="#"><p>Need Help</p></a>
+    </div>
   </div>
 
-  <div class="input-container">
-    <input type="text" id="message-input">
+
+  <div class="container-second">
+    <div id="chat-screen">
+      <div id="messages"></div>
+    </div>
+
+    <div class="input-container">
+      <input type="text" id="message-input">
+    </div>
+
   </div>
+
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
   <script src="js/main.js"></script>

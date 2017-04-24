@@ -1,23 +1,22 @@
-*{
+* {
   position: relative;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-body, html{
+body, html {
   margin: 0;
-  background-color: #4F86C6;
-  height: 100%;
-}
-.input-container{
+  background: -webkit-linear-gradient(-45deg, #CEB9FE 50%, #B8A6E4 50%);
+  height: 100%; }
+
+.input-container {
   background-color: #eee;
   padding: 10px;
   bottom: 0;
-  width: 100%;
-}
-#message-input{
-  position:fixed;
+  width: 100%; }
+
+#message-input {
+  position: fixed;
   bottom: 1rem;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
   position: relative;
   bottom: 0;
@@ -25,43 +24,99 @@ body, html{
   height: 40px;
   border-radius: 1rem;
   border: 1px solid #ccc;
-  padding: 8px 15px;
-}
-#chat-screen{
-  /*display:none;*/
-  min-height: calc(100vh - 60px);
-}
-.message-container{
+  padding: 8px 15px; }
+
+#chat-screen {
+  display: none;
+  min-height: calc(100vh - 60px); }
+
+.message-container {
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start; }
 
-}
-.message-container img{
+.message-container img {
   width: 100px;
   border-radius: 3rem;
-  margin-right: 20px;
-}
+  margin-right: 20px; }
+
 input {
   display: flex;
   flex-grow: 2000;
-  width: 200px;
+  width: 200px; }
 
-  }
-  .message-container:last-of-type{
-    animation: new-message 300ms 50ms forwards;
-  }
-  @keyframes new-message {
-    0% {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    95% {
-      transform: translateY(-5px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+#login-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  #login-screen h1 {
+    font-size: 3rem; }
+  #login-screen .chat {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #login-screen .logo {
+    height: 3rem;
+    position: relative;
+    left: 1rem; }
+  #login-screen .btn-container {
+    display: flex;
+    margin: 20px;
+    flex: 4;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white; }
+    #login-screen .btn-container p {
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 0.5rem; }
+    #login-screen .btn-container button {
+      display: flex;
+      border: none;
+      background: none; }
+    #login-screen .btn-container .face {
+      height: 4rem;
+      border-radius: 3rem; }
+      #login-screen .btn-container .face:hover {
+        padding: 1rem;
+        transition: all 200ms; }
+    #login-screen .btn-container .twitter {
+      height: 5rem;
+      border-radius: 3rem; }
+      #login-screen .btn-container .twitter:hover {
+        padding: 1rem;
+        transition: all 200ms; }
+    #login-screen .btn-container .github {
+      height: 4rem;
+      border-radius: 3rem; }
+      #login-screen .btn-container .github:hover {
+        padding: 1rem;
+        transition: all 200ms; }
+  #login-screen .texto {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    justify-content: space-around; }
+    #login-screen .texto p {
+      color: white; }
+
+.message-container:last-of-type {
+  animation: new-message 300ms 50ms forwards; }
+
+@keyframes new-message {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); }
+  95% {
+    transform: translateY(-5px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }

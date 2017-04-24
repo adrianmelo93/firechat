@@ -1,16 +1,18 @@
 {
-  "name": "firechat",
-  "version": "1.0.0",
-  "description": "",
-  "main": "js/main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "reload -b"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "reload": "^1.1.0"
-  }
+    "name": "firechat",
+    "version": "1.0.0",
+    "description": "",
+    "main": "js/main.js",
+    "scripts": {
+        "sass": "node-sass scss -o css",
+        "sass:watch": "node-sass scss -o css -w",
+        "start": "reload -b"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^4.5.2",
+        "reload": "^1.1.0"
+    }
 }
