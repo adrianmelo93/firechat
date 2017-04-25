@@ -51,7 +51,8 @@ input {
   display: flex;
   flex-direction: column; }
   #login-screen h1 {
-    font-size: 3rem; }
+    font-size: 3rem;
+    font-family: Karla,sans-serif; }
   #login-screen .chat {
     flex: 4;
     display: flex;
@@ -63,7 +64,7 @@ input {
     left: 1rem; }
   #login-screen .btn-container {
     display: flex;
-    margin: 20px;
+    margin: 30px;
     flex: 4;
     justify-content: center;
     align-items: center;
@@ -81,23 +82,16 @@ input {
       border: none;
       background: none; }
     #login-screen .btn-container .face {
+      position: relative;
+      margin: 1rem;
       height: 4rem;
       border-radius: 3rem; }
-      #login-screen .btn-container .face:hover {
-        padding: 1rem;
-        transition: all 200ms; }
     #login-screen .btn-container .twitter {
       height: 5rem;
       border-radius: 3rem; }
-      #login-screen .btn-container .twitter:hover {
-        padding: 1rem;
-        transition: all 200ms; }
     #login-screen .btn-container .github {
       height: 4rem;
       border-radius: 3rem; }
-      #login-screen .btn-container .github:hover {
-        padding: 1rem;
-        transition: all 200ms; }
   #login-screen .texto {
     display: flex;
     flex: 1;

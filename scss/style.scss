@@ -38,9 +38,8 @@ body, html{
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
-
 }
+
 .message-container img{
   width: 100px;
   border-radius: 3rem;
@@ -61,6 +60,7 @@ input {
 
       h1{
         font-size: 3rem;
+        font-family: Karla,sans-serif;
       }
 
       .chat {
@@ -80,57 +80,49 @@ input {
       }
 
   .btn-container{
-    display: flex;
-    margin: 20px;
-    flex: 4;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-
-
-    p{
-      color: black;
       display: flex;
-      align-items: center;
+      margin: 30px;
+      flex: 4;
       justify-content: center;
-      position: relative;
-      top: 0.5rem;
-    }
+      align-items: center;
+      flex-direction: column;
+      background-color: white;
 
 
-          button{
-            display: flex;
-            border: none;
-            background: none;
-          }
-
-          .face{
-            height: 4rem;
-            border-radius: 3rem;
-            &:hover {
-              padding: 1rem;
-              transition: all 200ms;
+            p{
+              color: black;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+              top: 0.5rem;
             }
-          }
-          .twitter{
-            height: 5rem;
-            border-radius: 3rem;
-            &:hover {
-              padding: 1rem;
-              transition: all 200ms;
-            }
-          }
 
-          .github {
-            height: 4rem;
-            border-radius: 3rem;
-            &:hover {
-              padding: 1rem;
-              transition: all 200ms;
-            }
-          }
-        }
+
+                    button{
+                      display: flex;
+                      border: none;
+                      background: none;
+                    }
+
+                          .face{
+                            position: relative;
+                            margin: 1rem;
+                            height: 4rem;
+                            border-radius: 3rem;
+                          }
+
+                                .twitter{
+                                  height: 5rem;
+                                  border-radius: 3rem;
+                                }
+
+                                      .github {
+                                        height: 4rem;
+                                        border-radius: 3rem;
+                                      }
+                                    }
+
   .texto {
     display: flex;
     flex: 1;
