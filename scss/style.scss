@@ -10,10 +10,11 @@ body, html{
   height: 100%;
 }
 .input-container{
-  background-color: #eee;
+  background-color: #CEB9FE;
   padding: 10px;
   bottom: 0;
   width: 100%;
+
 }
 #message-input{
   position:fixed;
@@ -27,17 +28,21 @@ body, html{
   border-radius: 1rem;
   border: 1px solid #ccc;
   padding: 8px 15px;
-
+    overflow: auto;
 }
+
+
 #chat-screen{
   display: none;
   min-height: calc(100vh - 60px);
 }
 .message-container{
   padding: 10px;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
 }
 
 .message-container img{
@@ -50,7 +55,7 @@ input {
   display: flex;
   flex-grow: 2000;
   width: 200px;
-
+  bottom: 0;
 }
 
 #login-screen {
@@ -112,6 +117,10 @@ input {
                             border-radius: 3rem;
                           }
 
+                          img:hover{
+                            transform: scale(1.5);
+                          }
+
                                 .twitter{
                                   height: 5rem;
                                   border-radius: 3rem;
@@ -139,6 +148,7 @@ input {
   }
 
 }
+
 
   .message-container:last-of-type{
     animation: new-message 300ms 50ms forwards;
